@@ -64,8 +64,6 @@ body {
   font-size: 23px;
 }
 
-/* Page structure */
-
 .menu {
   text-align: right;
   margin-right: 20px;
@@ -92,6 +90,7 @@ body {
 /*   border: red solid 3px; */
   justify-content: left;
 }
+
 .content {
   display: flex;
   flex-direction: column;
@@ -101,7 +100,7 @@ body {
   padding: 40px;
 }
 
-/* Very light scaling for our illustration */
+
 .title {
   color: transparent;
   font-family: HK Grotesk, sans-serif;
@@ -115,6 +114,7 @@ body {
   -webkit-background-clip: text;
   background-attachment: fixed;
 }
+
 .about{
   text-align: right;
   margin-right: 50px;
@@ -195,7 +195,7 @@ h2 {
 .comp{
   width: 240px;
   height:auto;
-  transform: translate(-146px, -105px);
+  transform: translate(-148px, -105px);
 }
 .book{
   width: 85px;
