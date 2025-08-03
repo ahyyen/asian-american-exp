@@ -171,7 +171,6 @@ h2 {
   width: 900px;
 /*   border: solid red 1px; */
 /*  height: 120vh; */
-/*   background-image: url("https://cdn.glitch.global/672afac3-4ca3-435f-84c3-1d1d6530b567/desktop-wallpaper-sketches-easy-in-2020-bedroom-drawing-aesthetic-drawing-cute-art.jpg?v=1700020907090");
   background-size: 900px;
   background-repeat: no-repeat; */
   margin: 20px;
@@ -196,7 +195,7 @@ h2 {
 .comp{
   width: 240px;
   height:auto;
-  transform: translate(-146px, -103px);
+  transform: translate(-146px, -105px);
 }
 .book{
   width: 85px;
