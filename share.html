@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="https://glitch.com/favicon.ico" />
+    <title>Share Your Experience!</title>
+
+    <!-- Include firebase scripts from CDN      -->
+    <script src="https://www.gstatic.com/firebasejs/8.2.3/firebase.js"></script>
+
+    <!-- Import the webpage's javascript file -->
+    <script src="firebase.js" defer></script>
+
+    <!-- Import the webpage's stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- This input form controls submission of text input -->
+    <div class="menu">
+      <a class="menulink" href="index.html">home</a>
+      <a class="menulink" href="room.html">explore</a>
+      <a class="menulink" href="share.html">share</a>
+      <a class="menulink" href="about.html">about this project</a>
+    </div>
+    <div class="roomintro">
+      <h2>What does being Asian American mean to you?</h2>
+      <p>
+        There is an infinite amount of unique "Asian American experiences." Type
+        in the box below to share your own!
+      </p>
+    </div>
+<!-- firebase link if needed: https://asian-american-experiences-default-rtdb.firebaseio.com/ -->
+    <div class="container">
+      <form id="text-input-form" onsubmit="return false">
+        <input
+          type="text"
+          id="text-input-entry"
+          placeholder="Share your experience!"
+        />
+        <input
+          type="submit"
+          id="text-input-submit"
+          onclick="submitlock()"
+          value="Submit"
+        />
+      </form>
+
+      <div id="chat-container"></div>
+    </div>
+  </body>
+</html>

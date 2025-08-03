@@ -1,0 +1,353 @@
+/******************************************************************************
+START Glitch hello-app default styles
+
+The styles in this section do some minimal CSS resets, set default fonts and 
+colors, and handle the layout for our footer and "Remix on Glitch" button. If
+you're new to CSS they may seem a little complicated, but you can scroll down
+to this section's matching END comment to see page-specific styles.
+******************************************************************************/
+
+/* 
+  The style rules specify elements by type and by attributes such as class and ID
+  Each section indicates an element or elements, then lists the style properties to apply
+  See if you can cross-reference the rules in this file with the elements in index.html
+*/
+
+/* Our default values set as CSS variables */
+:root {
+  --color-bg: #a83d64;
+  --color-text-main: #ffffff;
+  --color-primary: #ffff00;
+  /*   --wrapper-height: 87vh; */
+  --image-max-width: 300px;
+  --image-margin: 3rem;
+  --font-family: "HK Grotesk";
+  --font-family-header: "HK Grotesk";
+}
+
+/* Basic page style resets */
+/* * {
+  box-sizing: border-box;
+}
+[hidden] {
+  display: none !important;
+} */
+
+/* Import fonts */
+@font-face {
+  font-family: HK Grotesk;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Regular.otf?v=1603136326027")
+    format("opentype");
+}
+@font-face {
+  font-family: HK Grotesk;
+  font-weight: bold;
+  src: url("https://cdn.glitch.me/605e2a51-d45f-4d87-a285-9410ad350515%2FHKGrotesk-Bold.otf?v=1603136323437")
+    format("opentype");
+}
+
+/
+
+/* Navigation grid */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem auto 50px;
+  padding: 1rem 50px 0.75rem 50px;
+  width: 100%;
+  flex-wrap: wrap;
+  
+}
+
+.back{
+  position: relative;
+  left: 45px;
+  bottom: 30px;
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 24px;
+  padding: 10px;
+}
+
+.back:hover{
+  background: #4CAAC2;
+  border-radius: 3px 10px;
+}
+
+
+/******************************************************************************
+END Glitch hello-app default styles
+******************************************************************************/
+
+body {
+  font-family: HK Grotesk, sans-serif;
+  background-color: var(--color-bg);
+  color: #ffffff;
+  font-size: 23px;
+}
+
+/* Page structure */
+
+.menu {
+  text-align: right;
+  margin-right: 20px;
+  margin-top: 30px;
+}
+
+.menulink {
+  color: #ffffff;
+  font-size: 20px;
+  padding: 8px;
+  text-decoration: none;
+}
+
+.menulink:hover{
+  background: #4CAAC2;
+  border-radius: 3px 10px;
+}
+
+.wrapper {
+  min-height: var(--wrapper-height);
+  display: grid;
+  margin: 0 1rem;
+  margin-top: 30px;
+/*   border: red solid 3px; */
+  justify-content: left;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: left;
+/*   border: blue solid 3px; */
+  padding: 40px;
+}
+
+/* Very light scaling for our illustration */
+.title {
+  color: transparent;
+  font-family: HK Grotesk, sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 140px;
+  line-height: 140%;
+  margin: 5;
+  text-align: left;
+  background-image: linear-gradient(#46e1cf, #6e5dba);
+  -webkit-background-clip: text;
+  background-attachment: fixed;
+}
+.about{
+  text-align: right;
+  margin-right: 50px;
+}
+
+/* Very light scaling for our illustration */
+.illustration {
+  max-width: 100%;
+  max-height: var(--image-max-width);
+  margin-top: var(--image-margin);
+}
+
+/* Instructions */
+.instructions {
+  margin: 1rem auto 0;
+/*   border: red solid 3px; */
+  font-size: 35px;
+}
+
+/* Subheading */
+h2 {
+  color: transparent;
+  font-family: HK Grotesk, sans-serif;
+  font-size: 42px;
+  background-image: linear-gradient(#46e1cf, #6e5dba,#9D68E5);
+  -webkit-background-clip: text;
+  background-attachment: fixed;
+}
+
+.roomintro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+/*   border: blue solid 3px; */
+  padding: 20px;
+}
+
+.containRoom{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+/*   border: solid green 1px; */
+  position: relative;
+  
+}
+
+.room{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 900px;
+/*   border: solid red 1px; */
+/*  height: 120vh; */
+/*   background-image: url("https://cdn.glitch.global/672afac3-4ca3-435f-84c3-1d1d6530b567/desktop-wallpaper-sketches-easy-in-2020-bedroom-drawing-aesthetic-drawing-cute-art.jpg?v=1700020907090");
+  background-size: 900px;
+  background-repeat: no-repeat; */
+  margin: 20px;
+}
+
+.roomitem{
+  border-radius: 50%;
+  transition: width 0.5s, height 1s;
+  transition: 0.4s ease-in-out;
+  padding: 10px;
+  position: absolute;
+ 
+/*   border: solid red 1px; */
+}
+
+.fruit{
+  width: 125px;
+  height:auto;
+  transform: translate(-360px, 120px);
+}
+
+.comp{
+  width: 240px;
+  height:auto;
+  transform: translate(-149px, -98px);
+}
+.book{
+  width: 85px;
+  height:auto;
+  transform: translate(295px, -255px);
+}
+
+.drawing{
+  width: 79px;
+  height:auto;
+  transform: translate(-19px, -145px)
+}
+
+.jacket{
+  width: 265px;
+  height: auto;
+  transform: translate(205px, 118px);
+}
+
+.glow{
+/*   width: 105px;
+  height: auto; */
+/*   transform: translate(0px, -15px); */
+  border-radius: 50%;
+  background-color: transparent;
+  box-shadow:
+    0 0 40px 20px #E6DF67;
+  transition: width 0.4s, height 1s;
+  transition: 0.3s ease-in-out
+    
+}
+
+.blurb{
+  display: none;
+  position: absolute;
+  background-color: #90E6E5;
+  color: #712FEF;
+  font-size: 16px;
+  border: #712FEF solid 3px;
+  padding: 35px;
+  border-radius: 50%;
+}
+
+a {
+  color: #E54DE0;
+}
+a:hover{
+  text-decoration: none;
+  color: white;
+}
+.fruitdesc{
+  transform: translate(-160px, 190px);
+}
+.compdesc{
+  transform: translate(-220px, -250px);
+}
+.bookdesc{
+  transform: translate(300px, -130px);
+}
+.drawingdesc{
+  transform: translate(107px, -40px);
+}
+.jacketdesc{
+  transform: translate(200px, 250px);
+}
+
+.arrow {
+  border: solid white;
+  border-width: 0 5px 5px 0;
+  display: inline-block;
+  padding: 9px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  transition: 0.4s ease-in-out;
+}
+
+
+.arrow:hover {
+  border: solid #46e1cf;
+  border-width: 0 6px 6px 0;
+  display: inline-block;
+  padding: 9px;
+  -webkit-transform: translate(10px) rotate(-45deg);
+  transition: 0.4s ease-in-out;
+}
+/* Interactive image */
+.illustration:active {
+  transform: translateY(5px);
+}
+
+
+.container {
+/*     background-color: yellow; */
+  margin: 30px;
+  text-align: center;
+}
+::placeholder {
+  color: white;
+  opacity: 0.7;
+}
+
+input {
+  height: 40px;
+  color: white;
+  border: 2px solid #46e1cf;
+  border-radius: 15px;
+  background-color: transparent;
+  padding: 5px 10px 5px 10px;
+  margin-bottom: 20px;
+}
+
+#chat-container{
+  font-size: 30px;
+/*   background-color: yellow; */
+  
+  margin:auto;
+  width:70vw;
+  display: grid;
+  grid-template-columns: auto auto  auto; 
+}
+
+.response{
+  background-image: linear-gradient(#46e1cf, #6e5dba);
+  background-attachment: fixed;
+  color:white;
+  margin:0.2em;
+  padding: 1em;
+  border-radius: 10px;
+/*   box-shadow: 0 0 50px #fff; */
+  
+  /*   border: 1px solid white; */
+}

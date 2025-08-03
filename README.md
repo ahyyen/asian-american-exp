@@ -1,1 +1,3 @@
-# asian-american-exp
+As a 2nd generation Taiwanese American, I’ve come to realize that there are many aspects of my experiences growing up that, while appearing strange to non-Asians, resonate deeply with my fellow Asian Americans. So this project attempts to share common aspects of the Asian American experience, specifically 2nd generation Asian Americans (children of Asian immigrants) like me. Sometimes the cultural differences between Asian and other more classically “American” households become a point of alienation—anything from the food we eat to seemingly mundane daily habits can cause us to be seen as strange by American society. With this project I hope to encourage both Asian Americans and non-Asian Americans to share in this experience and embrace the cultural diversity in our society.
+
+Project created by Allison Yen, Fall 2023
