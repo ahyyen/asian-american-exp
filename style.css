@@ -6,8 +6,8 @@
   /*   --wrapper-height: 87vh; */
   --image-max-width: 300px;
   --image-margin: 3rem;
-  --font-family: "HK Grotesk";
-  --font-family-header: "HK Grotesk";
+  --font-family: "HK Grotesk", sans-serif;
+  --font-family-header: "HK Grotesk", sans-serif;
 }
 
 
@@ -196,7 +196,7 @@ h2 {
 .comp{
   width: 240px;
   height:auto;
-  transform: translate(-149px, -105px);
+  transform: translate(-145px, -100px);
 }
 .book{
   width: 85px;
